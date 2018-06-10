@@ -1,0 +1,331 @@
+
+@font-face
+{
+    font-family: cs;
+    src : url('cs_regular.ttf');
+}
+
+@font-face
+{
+    font-family: gotham_bold;
+    src: url('GothamRounded-Bold.otf');
+}
+
+@font-face
+{
+    font-family: gotham_book;
+    src: url('GothamRounded-Book.otf');
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_bar
+{
+    font-family: gotham_book;
+    color: #595959;
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+ul
+{
+   list-style:none;
+   display: flex;
+}
+
+ul li 
+{
+   margin: 5px 10px; 
+   padding: 5px 5px; 
+}
+
+ul li:hover
+{
+    border-bottom:  1px solid #f2f2f2;
+}
+
+ul a li
+{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+ul a:hover
+{
+    text-decoration: none;
+    text-shadow: 0 0 10px #000;
+    color: #f2f2f2;
+}
+
+.heroic_model
+{
+    background-image: url('back.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.heroic_name
+{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-60%)
+}
+
+.h1
+{
+    font-family: Impact;
+    font-size: 130px;
+    color: #000;
+}
+
+.h2
+{
+    font-family: Impact;
+    font-size: 170px;
+    color: #000;
+    margin-top: -25px;
+}
+
+.h3
+{
+    font-family: Impact;
+    font-size: 50px;
+    color: #000;
+    margin: -8px 0 0 4.9px;
+}
+
+.card
+{
+    position: absolute;
+    right: 100px;
+}
+
+.card_inner
+{
+    width: 430px;
+    height: 450px;
+    background-color: #595959;
+    margin-top: -200px;
+}
+
+.card_content
+{
+    background-image: url('user.png');
+}
+
+.user_img
+{
+    width: 430px;
+    height: 300px;
+}
+
+.card_data
+{
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.about_heading
+{
+    float: left;
+    color: #000;
+}
+
+.work
+{
+    margin-top: 40px;
+    padding: 0 20px 0 20px;
+}
+
+.thumbnail
+{
+    border: none !important;
+    padding: 0 30px;
+    overflow:hidden;
+}
+
+.work_img
+{
+    border-radius: 50%;
+    border: 2px solid #595959;
+    transition: 0.3s;
+}
+
+.work_img:hover
+{
+    cursor: pointer;
+}
+
+.img_data
+{
+    transform: translateY(-100px);
+    text-align: center;
+    font-family: gotham_book;
+    font-size: 16px;
+}
+
+.contnt
+{
+    background-color: red;
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    background: rgba(0,0,0,0.0);
+    
+}
+
+
+.contnt::before
+{
+    content: "Dummy contents for demo";
+    text-align : center;
+    font-family: gotham_book;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 20px 20px 70px;
+    transition: 0.3s;
+    transform: translateY(70%);
+}
+
+.contnt:hover::before
+{
+    color: #f2f2f2;
+    transform: translateY(-80%);
+    display: block;
+    cursor:pointer;
+}
+
+.btn_work_section
+{
+    font-family: gotham_book;
+    font-size: 18px;
+    color: #f2f2f2;
+    width: 195px;
+    heigth: 62px;
+    border: none;
+    background-color: #595959;
+    border-radius: 0px;
+    margin-top: 35px;
+    transition: 0.3s;
+    padding: 8px;
+}
+
+.resume_section
+{
+    background-color: #d3d3d3;
+    
+}
+
+.btn_resume_section
+{
+    font-family: gotham_book;
+    font-size: 18px;
+    color: #f2f2f2;
+    width: 195px;
+    heigth: 62px;
+    border: none;
+    background-color: #595959;
+    border-radius: 0px;
+    margin-top: 35px;
+    transition: 0.3s;
+    padding: 8px;
+}
+
+.name_field
+{
+    margin-top: 25px !important;
+    height: 43px;
+    border: 2px solid #595959;
+    box-shadow: none;
+}
+
+.email_field
+{
+    margin-top: 25px !important;
+    height: 43px;
+    border: 2px solid #595959;
+}
+
+.txt_field
+{
+    margin-top: 25px !important;
+    height: 200px;
+    border: 2px solid #595959;
+}
+
+.get_in_touch_cntnt
+{
+    font-size: 25px;
+    float: right;
+    margin-top: 25px !important;
+    text-align: right;
+}
+
+table td
+{
+    font-family: gotham_book;
+    font-size: 19px;
+    border: 0 !important;
+    margin: 50px;
+    padding-top: 20px !important;
+}
+
+.info
+{
+    margin-top: 160px !important;
+}
+
+.footer
+{
+    background-color: #595959;
+    width: 100%;
+    margin: 40px 0 0 0;
+}
+
+.footer_name
+{
+    font-family: impact;
+    color: #f2f2f2;
+    padding: 20px 0;
+    font-size: 29px;
+}
+
+.copyright
+{
+    font-family: gotham_book;
+    font-size: 16px;
+    color: #f2f2f2;
+    padding: 47px 0 27px 0;
+    text-align: center;
+}
+
+.fa-linkedin, .fa-google-plus-g, .fa-facebook, .fa-twitter
+{
+    font-size: 30px;
+    color: #f2f2f2;
+    padding: 47px 9px 27px 9px; 
+    transition: 0.3s;
+}
+
+.fa-linkedin:hover, .fa-google-plus-g:hover, .fa-facebook:hover, .fa-twitter:hover
+{
+    text-shadow: 0 0 20px #f2f2f2;
+}
